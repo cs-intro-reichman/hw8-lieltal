@@ -69,7 +69,7 @@
         if(follows(name)) {
             for(int i = 0; i < fCount; i++) {
                 if(follows[i].equals(name)) {
-                    for(int j = i; j < fCount--; j++) {
+                    for(int j = i; j < fCount - 1; j++) {
                         follows[j] = follows[j+1];
                     }
                     follows[fCount - 1] = null;
